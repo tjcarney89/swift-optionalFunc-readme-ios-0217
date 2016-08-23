@@ -4,10 +4,14 @@
 
 > Don't watch the clock; do what it does. Keep going. -[Sam Levenson](https://en.wikipedia.org/wiki/Sam_Levenson)
 
+## Overview
+
+In this lesson, we'll write functions that return optionals as well as functions that take in optionals. 
+
 ## Learning Objectives
 
-* Return `Optional` types from functions
-* Accept and work with `Optional` function parameters
+* Return `optional` types from functions
+* Write functions that take  in `optional` types as parameters
 
 ## Returning `Optional`s From Functions
 
