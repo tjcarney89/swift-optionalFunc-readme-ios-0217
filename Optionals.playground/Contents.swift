@@ -3,7 +3,7 @@ func brokenFirstItem(items: [String]) -> String {
 }
 
 var fruits = ["apple", "banana", "grape"]
-brokenFirstItem(fruits)  // Works!
+brokenFirstItem(items: fruits)  // Works!
 fruits = []
 // Uncomment the next line to see the problem.
 // You will get an "index out of range" error.
@@ -19,18 +19,18 @@ func firstItem(items: [String]) -> String? {
 }
 
 fruits = ["apple", "banana", "grape"]
-firstItem(fruits)
+firstItem(items: fruits)
 
-if let fruit = firstItem(fruits) {
+if let fruit = firstItem(items: fruits) {
     print("The first fruit is \(fruit)")
 } else {
     print("There are no fruits!")
 }
 
 fruits = []
-firstItem(fruits)
+firstItem(items: fruits)
 
-if let fruit = firstItem(fruits) {
+if let fruit = firstItem(items: fruits) {
     print("The first fruit is \(fruit)")
 } else {
     print("There are no fruits!")

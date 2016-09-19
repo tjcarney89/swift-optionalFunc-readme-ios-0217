@@ -31,7 +31,7 @@ That works really well when you have a list of items:
 
 ```swift
 var fruits = ["apple", "banana", "grape"]
-firstItem(fruits)
+firstItem(items: fruits)
 // Returns "apple"
 ```
 
@@ -39,7 +39,7 @@ What if your list is empty, though?
 
 ```swift
 var fruits = []
-firstItem(fruits)
+firstItem(items: fruits)
 // Uh oh! You get an index out of range error.
 ```
 
@@ -64,10 +64,10 @@ Try calling your new `firstItem` function with both a non-empty and empty list. 
 
 ```swift
 var fruits = ["apple", "banana", "grape"]
-firstItem(fruits)
+firstItem(items: fruits)
 // Returns "apple"
 fruits = []
-firstItem(fruits)
+firstItem(items: fruits)
 // Returns nil
 ```
 
@@ -75,7 +75,7 @@ If you enter the above code, along with your definition of `firstItem`, into a n
 
 ```swift
 fruits = ["apple", "banana", "grape"]
-if let fruit = firstItem(fruits) {
+if let fruit = firstItem(items: fruits) {
     print("The first fruit is \(fruit)")
 } else {
     print("There are no fruits!")
@@ -83,7 +83,7 @@ if let fruit = firstItem(fruits) {
 // Prints "The first fruit is apple"
 
 fruits = []
-if let fruit = firstItem(fruits) {
+if let fruit = firstItem(items: fruits) {
     print("The first fruit is \(fruit)")
 } else {
     print("There are no fruits!")
