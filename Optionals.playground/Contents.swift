@@ -18,7 +18,7 @@ func firstItem(items: [String]) -> String? {
     return items[0]
 }
 
-fruits = ["apple", "banana", "grape"]
+fruits = ["pear", "banana", "grape"]
 firstItem(items: fruits)
 
 if let fruit = firstItem(items: fruits) {
